@@ -17,6 +17,7 @@ addBtn.addEventListener("click", () => {
   const doneBtn = document.createElement("button");
   doneBtn.textContent = "Done";
   doneBtn.classList.add("done-btn");
+  
   doneBtn.addEventListener("click", () => {
     span.classList.toggle("done");
   });
