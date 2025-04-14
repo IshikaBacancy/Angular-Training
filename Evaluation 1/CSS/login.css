@@ -1,0 +1,98 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Login Form Container */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top:2px;
+
+}
+
+
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+
+input[type="email"]:focus, 
+input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+
+button[type="submit"], 
+button#loadDummyData {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+button[type="submit"]:hover, 
+button#loadDummyData:hover {
+    background-color: #45a049;
+}
+
+
+button#loadDummyData {
+    background-color: #f44336;
+    margin-top: 10px;
+}
+
+button#loadDummyData:hover {
+    background-color: #e53935;
+}
+
+#message{
+    margin-top: 20px; 
+    font-size: 14px;
+    font-weight:10px;
+}
+
+
+@media (max-width: 480px) {
+    form {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
