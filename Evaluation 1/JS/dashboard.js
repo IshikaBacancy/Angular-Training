@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const commentCount = blog.comments ? blog.comments.length : 0;
 
       const blogCard = document.createElement("div");
-      blogCard.className = "blog-card"; // Add class for styling
+      blogCard.className = "blog-card";
 
       blogCard.innerHTML = `
           <img src="${blog.image}" alt="${blog.title}">
